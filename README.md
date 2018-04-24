@@ -1,6 +1,6 @@
-This project was created with cloud9 ide.
+#### This project was created with cloud9 ide.
 
-#### For more information about Cloud9 IDE visit http://docs.c9.io
+For more information about Cloud9 IDE visit http://docs.c9.io
 
 # CMS Documentation 
 
