@@ -1,0 +1,8 @@
+<div class="categories">
+					 <h3>CATEGORIES</h3>
+					 <ul>
+					 {% for section in sections %}
+					     <li><a href="{{ site_url('demo') }}/{{ section.prefix }}">{{ section.name }}</a></li>
+					 {% endfor %}
+					 </ul>
+				 </div>

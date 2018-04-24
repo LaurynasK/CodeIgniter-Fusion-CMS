@@ -1,0 +1,38 @@
+<div class="container">
+		  <div class="col-md-8 single-main">				 
+			  <div class="single-grid">
+			      
+					<img src="{{ base_url() }}/uploads/files/{{ single.main_image }}" alt=""/>
+					<h1>{{single.title}}</h1>
+					<p>{{ single.article_text | raw }}</p>
+			  </div>
+			
+			<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+                <div class="slides"></div>
+                <h3 class="title"></h3>
+                <a class="prev">‹</a>
+                <a class="next">›</a>
+                <a class="close">×</a>
+                <a class="play-pause"></a>
+                <ol class="indicator"></ol>
+            </div>
+            
+            <div id="wrapper">
+                {% for picture in single.article_gallery %}
+                <div class="box">
+                    <a href="{{base_url}}/uploads/files/{{ picture }}" title="{{ picture }}" data-gallery>
+                        <img src="{{base_url}}/uploads/files/{{ picture }}" alt="{{ picture }}">
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+            
+            
+		  </div>
+            
+			  <div class="col-md-4 side-content">
+				 {{ categories | raw }}
+				 <div class="clearfix"></div>
+			  </div>
+			  <div class="clearfix"></div>
+		  </div>

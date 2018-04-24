@@ -1,0 +1,1 @@
+var gallery = $('#blueimp-gallery').data('gallery');

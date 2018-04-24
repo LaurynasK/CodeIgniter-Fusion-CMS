@@ -1,0 +1,31 @@
+{% set active = 'Home' %}
+
+<div class="content">
+	 <div class="container">
+		 <div class="content-grids">
+			 <div class="col-md-8 content-main">
+				 <div class="content-grid">
+				 	{% for article in articles %}					 
+					 <div class="content-grid-info">
+					 <img id="main-image" src="{{ base_url() }}/uploads/files/{{ article.main_image }}" style="width:100%"/>
+
+						 <div class="post-info">
+						 <h4><a href="{{ site_url('demo') }}/{{article.article_section.prefix }}/{{article.segment}}?id={{article.id}}">{{ article.title }}</h4>
+						 <p>{{ article.article_text|striptags|slice(0, 150) ~ '...'   }}</p>
+						 <a href="{{ site_url('demo') }}/{{article.article_section.prefix }}/{{article.segment}}?id={{article.id}}"><span></span>READ MORE</a>
+						 </div>
+					 </div>
+					 {% endfor %}
+					 
+				 </div>
+			  </div>
+			  <div class="col-md-4 content-right">
+				 <div class="clearfix"></div>
+				 {{ categories | raw }}
+				 <div class="clearfix"></div>
+			  </div>
+			  
+			  <div class="clearfix"></div>
+		  </div>
+	  </div>
+</div>
