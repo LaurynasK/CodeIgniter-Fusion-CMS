@@ -27,7 +27,7 @@ For website building you can use template library. With library help you can set
 
 * [CodeIgniter](https://codeigniter.com/)
 * [CodeIgniter Ion Auth](https://github.com/benedmunds/CodeIgniter-Ion-Auth)
-* [CodeIgniter Ion Auth](https://bitbucket.org/wiredesignz/codeigniter-modular-extensions-hmvc) with few modifications
+* [CodeIgniter HMVC](https://bitbucket.org/wiredesignz/codeigniter-modular-extensions-hmvc) with few modifications
 * [CodeIgniter Simple and Secure Twig](https://github.com/kenjis/codeigniter-ss-twig) 
 * [Codeigniter MyModel](https://github.com/avenirer/CodeIgniter-MY_Model)
 * [jQuery-File-Upload](https://github.com/blueimp/jQuery-File-Upload)
