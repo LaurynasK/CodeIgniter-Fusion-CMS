@@ -3,9 +3,9 @@
 For more information about Cloud9 IDE visit http://docs.c9.io
 
 ## Demo Page 
-url: https://codeigniter-fusion-cms.herokuapp.com
-user: demo@demo.de
-pass demodemo
+* url: https://codeigniter-fusion-cms.herokuapp.com
+* user: demo@demo.de
+* pass demodemo
 
 # CMS Documentation 
 
