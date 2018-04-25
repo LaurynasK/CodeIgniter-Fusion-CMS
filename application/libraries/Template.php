@@ -82,8 +82,8 @@ class Template
     public function set_js(){
         $js_files = func_get_args();
         
-        if(isset($js_files[0]) && count($js_files[0]) > 1){
-            $js_files = $js_files[0];
+        if(isset($js_files[0]) && is_array($js_files[0])){
+            if(count($js_files[0]) > 1) $js_files = $js_files[0];
         }
 
         if(!isset($this->data) || !array_key_exists('js', $this->data)){
@@ -119,8 +119,8 @@ class Template
     public function set_css(){
         $css_files = func_get_args();
         
-        if(isset($css_files[0]) && count($css_files[0]) > 1){
-            $css_files = $css_files[0];
+        if(isset($css_files[0]) && is_array($css_files[0])){
+            if(count($css_files[0]) > 1) $css_files = $css_files[0];
         }
         
         
